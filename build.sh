@@ -10,6 +10,11 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
+git clone https://github.com/Alastor-Ripley/Fedora-Hyprland.git
+cd Fedora-Hyprland
+chmod +x ./install.sh
+./install.sh
+
 dnf install -y tmux 
 
 # Use a COPR Example:
